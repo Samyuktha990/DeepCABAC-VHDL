@@ -1,0 +1,21 @@
+# Cadence Xcelium generated files
+xcelium.d/
+xrun.key
+xrun.log
+*.history
+runner.log
+
+# Temporary files
+*.bak
+*.backup
+*~
+
+# Original simulation directories
+/bert_fifo1/
+/swin_fifo1/
+/mobilenet_fifo32/
+/mobilenet_fifo64/
+
+# Ignore simulation logs except selected results
+*.log
+!Testbenches/**/simulation.log

@@ -1,0 +1,160 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Nov 06, 2026 at 12:35:29 CET
+xrun
+	-64bit
+	-v200x
+	-access +rw
+	../../../cabac_types_pkg.vhd
+	../../../fifo.vhd
+	../../../intermediate_storage.vhd
+	../../../Context_step.vhd
+	../../../Debin_step.vhd
+	../../../cabac_split_engine_ratio33_11p34ns.vhd
+	../../../Decoder_branch_renorm_best21ns.vhd
+	../../../Decoder_step_splitbranch_ratio33_offsetcmp_19p71ns.vhd
+	../../../cabac_top_ratio33_16bin_candidate.vhd
+	cabac_top_16bin_tb.vhd
+	-top CABAC_TOP_tb
+	-input run.tcl
+	-l mobilenet_fifo64_reservoir256.log
+Recompiling... reason: file '/usrf07/home/agids/stu/s_ids143/cabac_20261104/cabac_top_ratio33_16bin_candidate.vhd' is newer than expected.
+	expected: Thu Nov  5 00:16:31 2026
+	actual:   Thu Nov  5 22:21:47 2026
+../../../intermediate_storage.vhd:
+	errors: 0, warnings: 0
+../../../cabac_top_ratio33_16bin_candidate.vhd:
+	errors: 0, warnings: 0
+cabac_top_16bin_tb.vhd:
+	errors: 0, warnings: 0
+WORKLIB.INTERMEDIATE_STORAGE (entity):
+	streams: 17, words: 1731
+WORKLIB.INTERMEDIATE_STORAGE:RTL (architecture):
+	streams: 1, words: 1585
+WORKLIB.CABAC_TOP:RTL (architecture):
+	streams: 7, words: 31948
+WORKLIB.CABAC_TOP_TB (entity):
+	streams: 10, words: 912
+WORKLIB.CABAC_TOP_TB:TB (architecture):
+	streams: 2, words: 3079
+xmelab: *W,ARCMRA: Elaborating the WORKLIB.CABAC_TOP_TB:TB, MRA (most recently analyzed) architecture.
+	Elaborating the design hierarchy:
+	Top level design units:
+		:cabac_top_tb(tb):
+	Building instance specific data structures.
+	Design hierarchy summary:
+		       Instances  Unique
+		Components:   85       9
+		Processes:   268      57
+		Signals:     207      87
+	Writing initial simulation snapshot: WORKLIB.CABAC_TOP_TB:TB
+Loading snapshot worklib.cabac_top_tb:tb .................... Done
+xcelium> run
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(0):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(0):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(1):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(1):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(2):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(2):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(3):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(3):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(4):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(4):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(5):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(5):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(6):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(6):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(7):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(7):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(8):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(8):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(9):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(9):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(10):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(10):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(11):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(11):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(12):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(12):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(13):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(13):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(14):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(14):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(15):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(15):U_DECODER_STEP:U_SPLIT:$PROCESS_000 (architecture worklib.cabac_split_engine_ratio33_candidate:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(0):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(15):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(14):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(13):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(12):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(11):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(10):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(9):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(8):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(7):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(6):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(5):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(4):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(3):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(2):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(1):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(1):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(2):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(3):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(4):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(5):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(6):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_splitbranch_ratio33_offsetcmp:rtl)
+Built-in relational argument contains a ('U', 'X', 'W', 'Z', '-') in an operand.
+ASSERT/WARNING (time 0 FS) from package ieee.NUMERIC_STD, this builtin function called  from process :DUT:GEN_STAGES(7):U_DECODER_STEP:$PROCESS_004 (architecture worklib.Decoder_step_split
